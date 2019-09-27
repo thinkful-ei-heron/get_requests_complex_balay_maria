@@ -21,11 +21,11 @@ function displayResults(responseJson) {
   $('#results').removeClass('hidden');
 }
 
-function getParkInfo(query, maxResults){
+function getParkInfo(query, maxResults) {
   const params = { 
     api_key: apiKey,
     q: query,
-    limit: maxResults,
+    limit: maxResults
   };
   const queryString = formatQueryParams(params);
   const url = searchURL + '?' + queryString;
