@@ -24,7 +24,7 @@ function displayResults(responseJson) {
 function getParkInfo(query, maxResults) {
   const params = { 
     api_key: apiKey,
-    q: query,
+    stateCode: query,
     limit: maxResults
   };
   const queryString = formatQueryParams(params);
